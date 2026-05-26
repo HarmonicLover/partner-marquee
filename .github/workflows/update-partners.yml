@@ -1,0 +1,49 @@
+name: Update partners.json
+
+# 觸發條件:任何圖片檔有變動 (新增/重命名/刪除) 就重生 partners.json
+# 故意排除 partners.json 自身,避免 Action commit 再觸發自己造成迴圈
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.png'
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.webp'
+      - '**.gif'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate partners.json from image files
+        run: |
+          # 找根目錄所有圖片檔 (排除 .github/ 等隱藏目錄),按字母排序
+          # 用 jq 產生正確 JSON (處理引號 / Unicode 跳脫)
+          ls -1 *.png *.jpg *.jpeg *.webp *.gif 2>/dev/null | sort | \
+            jq -R -s '{
+              partners: [
+                split("\n")[] | select(length > 0) | {
+                  name: (. | sub("\\.[^.]+$"; "")),
+                  image: .
+                }
+              ]
+            }' > partners.json
+          echo "Generated partners.json:"
+          cat partners.json
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet partners.json; then
+            echo "No changes to partners.json — skip commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add partners.json
+            git commit -m "chore: auto-update partners.json"
+            git push
+          fi
