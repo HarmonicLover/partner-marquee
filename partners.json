@@ -1,20 +1,68 @@
 {
   "partners": [
-    { "name": "加密泰瑞",                  "image": "加密泰瑞.png" },
-    { "name": "Max Crypto",               "image": "Max Crypto.png" },
-    { "name": "Tina 的理財生活",            "image": "Tina的理財生活.png" },
-    { "name": "Crypto Mao 貓大",          "image": "Crypto Mao 貓大.jpg" },
-    { "name": "CrazyCat 瘋貓社群",         "image": "CrazyCat瘋貓社群.png" },
-    { "name": "MetaBear",                 "image": "MetaBear.png" },
-    { "name": "Meta-Fish",                "image": "Meta-Fish.jpg" },
-    { "name": "幣區大表哥 小羊",            "image": "幣區大表哥 小羊.png" },
-    { "name": "交易兄弟",                  "image": "交易兄弟.png" },
-    { "name": "anricharts",               "image": "anricharts.png" },
-    { "name": "COINX 幣學院",              "image": "COINX幣學院.png" },
-    { "name": "HUMBLE Trader Academy",    "image": "HUMBLE Trader Academy_.jpg" },
-    { "name": "壁虎啾啾學",                 "image": "壁虎啾啾學.jpg" },
-    { "name": "才富自遊聯盟",                "image": "才富自遊聯盟.jpg" },
-    { "name": "碩士幣業生",                 "image": "碩士幣業生.jpg" },
-    { "name": "龍幣盈",                    "image": "龍幣盈.jpg" }
+    {
+      "name": "COINX幣學院",
+      "image": "COINX幣學院.png"
+    },
+    {
+      "name": "CrazyCat瘋貓社群",
+      "image": "CrazyCat瘋貓社群.png"
+    },
+    {
+      "name": "Crypto Mao 貓大",
+      "image": "Crypto Mao 貓大.jpg"
+    },
+    {
+      "name": "HUMBLE Trader Academy_",
+      "image": "HUMBLE Trader Academy_.jpg"
+    },
+    {
+      "name": "Max Crypto",
+      "image": "Max Crypto.png"
+    },
+    {
+      "name": "Meta-Fish",
+      "image": "Meta-Fish.jpg"
+    },
+    {
+      "name": "MetaBear",
+      "image": "MetaBear.png"
+    },
+    {
+      "name": "Tina的理財生活",
+      "image": "Tina的理財生活.png"
+    },
+    {
+      "name": "anricharts",
+      "image": "anricharts.png"
+    },
+    {
+      "name": "交易兄弟",
+      "image": "交易兄弟.png"
+    },
+    {
+      "name": "加密泰瑞",
+      "image": "加密泰瑞.png"
+    },
+    {
+      "name": "壁虎啾啾學",
+      "image": "壁虎啾啾學.jpg"
+    },
+    {
+      "name": "小羊-幣圈大表哥",
+      "image": "小羊-幣圈大表哥.png"
+    },
+    {
+      "name": "才富自遊聯盟",
+      "image": "才富自遊聯盟.jpg"
+    },
+    {
+      "name": "碩士幣業生",
+      "image": "碩士幣業生.jpg"
+    },
+    {
+      "name": "龍幣盈",
+      "image": "龍幣盈.jpg"
+    }
   ]
 }
