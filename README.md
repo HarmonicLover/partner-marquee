@@ -23,4 +23,4 @@ CryptoTradersClub 合作團隊 logo 集合，給 sentiment lens 跑馬燈用。
 
 前端從 `https://raw.githubusercontent.com/HarmonicLover/partner-marquee/main/partners.json` 抓 JSON
 跑馬燈會無限橫向滾動,滑鼠 hover 暫停。
- 
+  
